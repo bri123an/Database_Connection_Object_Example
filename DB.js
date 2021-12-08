@@ -3,9 +3,8 @@ const mysql = require('mysql');
 const dotenv = require('dotenv');
 
 // Setup Environment Variables From .env File
-(function (){
-    dotenv.config();
-})();
+dotenv.config();
+
 
 class db {
     constructor(db_instance_type, db_host, db_port, db_user, db_password, db_database){
